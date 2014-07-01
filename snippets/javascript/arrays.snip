@@ -18,3 +18,31 @@ options     word
   map(function (${1:element}${2:#:, index}${3:#:, array}) {
     ${0}
   });
+
+snippet     reduce
+abbr        .reduce(callback)
+options     head
+  reduce(function (${1:previousValue}${2:#:, currentValue}${3:#:, index}${4:#:, array}) {
+  });
+
+snippet     keys
+abbr        .keys()
+options     word
+  keys()${0}
+
+snippet     every
+abbr        .every(callback)
+options     head
+  every(function (${1:element}${2:#:, index}${3:#:, array}) {
+    ${0}
+  });
+
+snippet     slice
+abbr        .slice(begin[, end])
+options     word
+  slice(${1:begin}${2:#:, end})${0}
+
+snippet     splice
+abbr        .splice(index, howMany[...])
+options     word
+  splice(${1:index}${2:#:howMany}${3:#:elements...})${0}
