@@ -1,16 +1,19 @@
-snippet     async.parallel
+snippet     parallel
 abbr        async.parallel([ ... ])
-options     head
-  async.parallel([${1:elements}], function(err, results) {
+regexp      'async'
+options     word
+  parallel([${1:elements}], function(err, results) {
     if (err)
       return callback(err);
     
     ${2:now what}
   });
 
-snippet     async.waterfall
+snippet     waterfall
 abbr        async.waterfall([ ... ])
-  async.waterfall([${1:elements}], function(err, results) {
+regexp      'async'
+options     word
+  waterfall([${1:elements}], function(err, results) {
     if (err)
       return callback(err);
 
