@@ -1,7 +1,8 @@
-snippet     __bind
-abbr        var = __bind = func...
-options     head
-  var = __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+snippet     _bind
+abbr        var = __bind = fn()
+regexp      '^var = _'
+options     word
+  _bind = function(f,m){return function(){return f.apply(m, arguments);};};
   ${0}
 
 snippet     makeClass
