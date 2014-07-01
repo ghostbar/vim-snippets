@@ -1,8 +1,8 @@
-snippet     _bind
+snippet     __bind
 abbr        var = __bind = fn()
-regexp      '^var = _'
+regexp      '^var '
 options     word
-  _bind = function(f,m){return function(){return f.apply(m, arguments);};};
+  __bind = function(f,m){return function(){return f.apply(m, arguments);};};
   ${0}
 
 snippet     makeClass

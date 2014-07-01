@@ -1,6 +1,6 @@
 snippet     parallel
 abbr        async.parallel([ ... ])
-regexp      'async'
+regexp      'async\.'
 options     word
   parallel([${1:elements}], function(err, results) {
     if (err)
@@ -11,7 +11,7 @@ options     word
 
 snippet     waterfall
 abbr        async.waterfall([ ... ])
-regexp      'async'
+regexp      'async\.'
 options     word
   waterfall([${1:elements}], function(err, results) {
     if (err)

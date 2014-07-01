@@ -1,0 +1,35 @@
+snippet     fs
+abbr        var fs = require('fs')
+regexp      '^var '
+options     word
+  fs = require('fs');
+  ${0}
+
+snippet     async
+abbr        var async = require('async')
+regexp      '^var '
+options     word
+  async = require('async');
+  ${0}
+
+snippet     require
+abbr        require('')
+regexp      '^var .* ='
+options     word
+  require('${1:module}');
+  ${0}
+
+snippet     on(
+abbr        .on(callback)
+regexp      '\.'
+options     word
+  on(function (${1:#:args}) {
+    ${0}
+  });
+
+snippet     once(
+abbr        .once(callback)
+options     word
+  once(function (${1:#:args}) {
+    ${0}
+  });
