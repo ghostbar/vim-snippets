@@ -1,0 +1,42 @@
+snippet     __bind
+abbr        var = __bind = func...
+options     head
+  var = __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+  ${0}
+
+snippet     makeClass
+abbr        makeClass
+options     head
+  'use strict';
+
+  // 
+  // <a name='constructor'></a>
+  // constructor
+  // -----------
+  //
+  function ${1:ClassName} (${2:#:args}) {
+    ${0}
+  }
+
+snippet     elementSupport
+abbr        fn elementSupportAttribute(..
+options     head
+  function elementSupportAttribute (${1:element}, ${2:attribute}) {
+    var test = document.createElement($1);
+    if ($2 in test)
+      return true;
+    else
+      return false;
+  }
+
+snippet     inputSupport
+abbr        inputSupportType(...
+options     head
+  function inputSupportsType (test) {
+    var input = document.createElement('input');
+    input.setAttribute('type', test);
+    if (input.type == 'text')
+      return false;
+    else
+      return true;
+  }

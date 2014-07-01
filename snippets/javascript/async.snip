@@ -1,0 +1,18 @@
+snippet     async.parallel
+abbr        async.parallel([ ... ])
+options     head
+  async.parallel([${1:elements}], function(err, results) {
+    if (err)
+      return callback(err);
+    
+    ${2:now what}
+  });
+
+snippet     async.waterfall
+abbr        async.waterfall([ ... ])
+  async.waterfall([${1:elements}], function(err, results) {
+    if (err)
+      return callback(err);
+
+    ${2://Now what};
+  });
