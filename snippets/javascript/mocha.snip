@@ -1,0 +1,25 @@
+snippet     makeTest
+abbr        boilerplate for tests
+options     head
+  /* global describe,it */
+  'use strict';
+
+  var should = require('should');
+  
+  describe('${1:description}', function () {
+    ${0}
+  });
+
+snippet     describe
+abbr        describe('description', callback)
+options     head
+  describe('${1:description}', function () {
+    ${0}
+  });
+
+snippet     it
+abbr        it('desc', callback)
+options     head
+  it('${1:description}', function (${2:#:done}) {
+    ${0}
+  });
