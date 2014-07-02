@@ -33,3 +33,13 @@ options     word
   once(function (${1:#:args}) {
     ${0}
   });
+
+snippet     module
+abbr        module.exports = 
+options     head
+  module.exports = ${1:either function or name}
+
+snippet     exports
+abbr        exports.name = fn
+options     head
+  exports.${1:name} = ${0}
