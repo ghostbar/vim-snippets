@@ -1,3 +1,16 @@
+snippet     strict
+abbr        'use strict';
+options     head
+  'use strict';
+
+  ${0}
+
+snippet     global
+abbr        /* global var */
+options     head
+  /* global ${1:vars_gone_global} */
+  ${0}
+
 snippet     __bind
 abbr        var = __bind = fn()
 regexp      '^var '
