@@ -3,11 +3,16 @@ vim-snippets
 
 Personal repository of snippets. Mainly javascript-related.
 
-Works with neosnippets.
+Works with [neosnippet](https://github.com/Shougo/neosnippet.vim).
+
+Some snippets available:
+
++ `javascript/node`
++ `_/licenses` for licenses boilerplate (require $AUTHOR to be defined in environment).
 
 License
 -------
-Written in 2014 by Jose Luis Rivas <me@ghostbar.co>  
+Written in 2014 by Jose Luis Rivas `<me@ghostbar.co>` 
 
 To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty. 
 

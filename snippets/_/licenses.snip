@@ -1,7 +1,7 @@
 snippet     apache2
 abbr        apache2
 options     head
-  Copyright `strftime("&Y")` Jose Luis Rivas <me@ghostbar.co>
+  Copyright `strftime('%Y')` `expand($AUTHOR)`
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ options     head
 snippet     bsd
 abbr        bsd
 options     head
-  Copyright © `strftime("%Y")`, Jose Luis Rivas <me@ghostbar.co>
+  Copyright © `strftime("%Y")`, `expand($AUTHOR)`
   All rights reserved.
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -157,7 +157,7 @@ options     head
 snippet     freebsd
 abbr        freebsd
 options     head
-  Copyright `strftime("%Y")` Jose Luis Rivas. All rights reserved.
+  Copyright `strftime("%Y")` `expand($AUTHOR)`. All rights reserved.
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -170,7 +170,7 @@ options     head
 snippet     gpl
 abbr        gpl
 options     head
-  Copyright © `srtftime("%Y")` Jose Luis Rivas <me@ghostbar.co>
+  Copyright © `srtftime("%Y")` `expand($AUTHOR)`
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License
@@ -189,7 +189,7 @@ options     head
 snippet     isc
 abbr        isc
 options     head
-  Copyright © `strftime("%Y")` Jose Luis Rivas <me@ghostbar.co>
+  Copyright © `strftime("%Y")` `expand($AUTHOR)`
 
   Permission to use, copy, modify, and/or distribute this software for any purpose
   with or without fee is hereby granted, provided that the above copyright notice
@@ -206,7 +206,7 @@ options     head
 snippet     lgpl
 abbr        lgpl
 options     head
-  Copyright © `strftime("%Y")` Jose Luis Rivas <me@ghostbar.co>
+  Copyright © `strftime("%Y")` `expand($AUTHOR)`
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -221,7 +221,7 @@ options     head
 snippet     mit
 abbr        mit
 options     head
-  Copyright © `strftime("%Y")` Jose Luis Rivas <me@ghostbar.co>
+  Copyright © `strftime("%Y")` `expand($AUTHOR)`
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -244,7 +244,7 @@ options     head
 snippet     public_domain
 abbr        PD Notice
 options     head
-  Written in `strftime("%Y")` by Jose Luis Rivas <me@ghostbar.co> 
+  Written in `strftime("%Y")` by `expand($AUTHOR)` 
 
   ${1:#:other authors} 
 
