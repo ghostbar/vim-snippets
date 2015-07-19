@@ -1,12 +1,16 @@
 # Global snippets
 
 snippet ddate
-	  `strftime("%B %d, %Y")`
+	  `strftime("%Y-%m-%d")`
 
 snippet dateutc
 abbr    with UTC
-	  `strftime("%B %d, %Y %T UTC%z")`
+	  `strftime("%Y-%m-%d %T%z")`
 
+snippet dateunix
+abbr dateunix
+    `strftime("%Y-%m-%d %s")`
+    
 snippet time
 	  `strftime("%T UTC%z")`
 
