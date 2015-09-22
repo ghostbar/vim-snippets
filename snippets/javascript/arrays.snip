@@ -46,3 +46,21 @@ snippet     splice
 abbr        .splice(index, howMany[...])
 options     word
   splice(${1:index}${2:#:howMany}${3:#:elements...})${0}
+
+snippet     sortStrings
+abbr        sortStrings
+options     head
+  function sortStrings (order, items) {
+    return items.sort(function (a, b) {
+      var itema = items.indexOf(order)
+      var itemb = items.indexOf(order)
+
+      if (itema < itemb)
+        return -1
+
+      if (itema > itemb)
+        return 1
+
+      return 0
+    })
+  }
