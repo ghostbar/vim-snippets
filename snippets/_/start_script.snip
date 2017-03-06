@@ -1,0 +1,33 @@
+snippet     start_script
+abbr        start_script
+options     head
+  #!/usr/bin/env bash
+
+  declare help="
+  Usage:
+    ${1:script_name}
+  Options:
+    --version           Show versions.
+    -h --help           Show this screen.
+  "
+  declare version="
+  Version: 1.0.0.
+  Licensed under the MIT terms.
+  "
+  print_version() {
+    echo "$version"
+  }
+  print_help() {
+    echo "$help"
+  }
+
+  main() {
+    set -eo pipefail; [[ "$TRACE" ]] && set -x
+    declare cmd="\$1"
+    case "$cmd" in
+      -h|--help)        shift; print_help "$@";;
+      --version)        shift; print_version "$@";;
+      *)                print_help "$@";;
+    esac
+  }
+  main "$@"
