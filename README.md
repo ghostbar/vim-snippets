@@ -3,7 +3,7 @@ vim-snippets
 
 Personal repository of snippets. Mainly javascript-related.
 
-Works with [neosnippet](https://github.com/Shougo/neosnippet.vim).
+Works with [coc-snippets](https://github.com/neoclide/coc-snippets).
 
 Some snippets available:
 
