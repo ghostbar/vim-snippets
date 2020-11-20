@@ -1,21 +1,15 @@
 snippet     parallel
-abbr        async.parallel([ ... ])
-regexp      'async\.'
-options     word
-  parallel([${1:elements}], function(err, results) {
-    if (err)
-      return callback(err);
-    
-    ${2:now what}
-  });
+	parallel([${1:elements}], function(err, results) {
+		if (err)
+			return callback(err);
+
+		${2:now what}
+	});
 
 snippet     waterfall
-abbr        async.waterfall([ ... ])
-regexp      'async\.'
-options     word
-  waterfall([${1:elements}], function(err, results) {
-    if (err)
-      return callback(err);
+	waterfall([${1:elements}], function(err, results) {
+		if (err)
+			return callback(err);
 
-    ${2://Now what};
-  });
+		${2://Now what};
+	});

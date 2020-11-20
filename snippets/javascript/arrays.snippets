@@ -1,66 +1,48 @@
 snippet   forEach
-abbr      .forEach(callback)
-options   word
-  forEach(function (${1:element}${2:#:, index}${3:#:, array}) {
-	  ${0}
-  });
+	forEach(function (${1:element}${2:#:, index}${3:#:, array}) {
+		${0}
+	});
 
 snippet     filter
-abbr        .filter(callback)
-options     word
-  filter(function (${1:element}${2:#:, index}${3:#:, array}) {
-    ${0}
-  });
+	filter(function (${1:element}${2:#:, index}${3:#:, array}) {
+		${0}
+	});
   
 snippet     map
-abbr        .map(callback)
-options     word
-  map(function (${1:element}${2:#:, index}${3:#:, array}) {
-    ${0}
-  });
+	map(function (${1:element}${2:#:, index}${3:#:, array}) {
+		${0}
+	});
 
 snippet     reduce
-abbr        .reduce(callback)
-options     head
-  reduce(function (${1:previousValue}${2:#:, currentValue}${3:#:, index}${4:#:, array}) {
-  });
+	reduce(function (${1:previousValue}${2:#:, currentValue}${3:#:, index}${4:#:, array}) {
+	});
 
 snippet     keys
-abbr        .keys()
-options     word
-  keys()${0}
+	keys()${0}
 
 snippet     every
-abbr        .every(callback)
-options     head
-  every(function (${1:element}${2:#:, index}${3:#:, array}) {
-    ${0}
-  });
+	every(function (${1:element}${2:#:, index}${3:#:, array}) {
+		${0}
+	});
 
 snippet     slice
-abbr        .slice(begin[, end])
-options     word
-  slice(${1:begin}${2:#:, end})${0}
+	slice(${1:begin}${2:#:, end})${0}
 
 snippet     splice
-abbr        .splice(index, howMany[...])
-options     word
-  splice(${1:index}${2:#:howMany}${3:#:elements...})${0}
+	splice(${1:index}${2:#:howMany}${3:#:elements...})${0}
 
 snippet     sortStrings
-abbr        sortStrings
-options     head
-  function sortStrings (order, items) {
-    return items.sort(function (a, b) {
-      var itema = items.indexOf(order)
-      var itemb = items.indexOf(order)
+	function sortStrings (order, items) {
+		return items.sort(function (a, b) {
+			var itema = items.indexOf(order)
+			var itemb = items.indexOf(order)
 
-      if (itema < itemb)
-        return -1
+			if (itema < itemb)
+				return -1
 
-      if (itema > itemb)
-        return 1
+			if (itema > itemb)
+				return 1
 
-      return 0
-    })
-  }
+			return 0
+		})
+	}

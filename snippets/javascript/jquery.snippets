@@ -1,29 +1,21 @@
 snippet     jQueryPlugin
-abbr        jQueryPlugin
-options     head
-  (function ($) {
-    $.fn.${1:nameOfFunction} = function ($2:params}) {
-      ${0}
-    };
-  })(jQuery);
+	(function ($) {
+		$.fn.${1:nameOfFunction} = function ($2:params}) {
+			${0}
+		};
+	})(jQuery);
 
 snippet     jQueryReady
-abbr        jQueryReady
-options     head
-  $(${1:document}).ready(function () {
-    ${0}
-  });
+	$(${1:document}).ready(function () {
+		${0}
+	});
 
 snippet     jExtendParams
-abbr        $.extend(...
-options     head
-  if (params)
-    $.extend(settings, params);
+	if (params)
+		$.extend(settings, params);
 
 snippet     .click
-abbr        .click(function (e)...
-  .click(function (event) {
-    e.preventDefault();
-
-    ${0}
-  });
+	.click(function (event) {
+		e.preventDefault();
+		${0}
+	});
